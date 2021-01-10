@@ -91,7 +91,7 @@ const gameIsOn = function () {
   const scoreHold = function () {
     if (player0Turn == 0) {
       player0RecordTotalScore += player0CurrentScoreValue;
-      if (player0RecordTotalScore >= 20) {
+      if (player0RecordTotalScore >= 100) {
         announceWinner();
         player0CurrentScoreValue = 0;
         player0CurrentScoreDOM.textContent = 0;
@@ -105,7 +105,7 @@ const gameIsOn = function () {
     } else {
       player1RecordTotalScore += player1CurrentScoreValue;
 
-      if (player1RecordTotalScore >= 20) {
+      if (player1RecordTotalScore >= 100) {
         announceWinner();
         player1CurrentScoreValue = 0;
         player1CurrentScoreDOM.textContent = 0;
